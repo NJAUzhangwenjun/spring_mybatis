@@ -50,9 +50,10 @@
 	
 	<bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactory">
 		<property name="dataSource" ref="dataSource"/>
+		<!--别名-->
 		<property name="typeAliasesPackage" value="com.njau.domain"/>
 	</bean>
-	
+	<!--要扫描的mapper文件位置-->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" id="mapperScannerConfigurer">
 		<property name="basePackage" value="com.njau.dao"/>
 	</bean>
