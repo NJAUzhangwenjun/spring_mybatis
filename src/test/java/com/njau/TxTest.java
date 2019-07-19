@@ -35,8 +35,8 @@ public class TxTest {
 	@Test
 	public void testAdd() {
 		Product product = new Product();
-		product.setName("苹果");
-		product.setPrice(2f);
+		product.setName("麻辣条");
+		product.setPrice(112f);
 		productService.addProduct(product);
 		findTset();
 	}
